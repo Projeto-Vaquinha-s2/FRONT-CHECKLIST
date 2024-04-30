@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    font-family: Alata;
+    text-decoration: none;
+  }
+  
+  .header {
+    background-color: aliceblue;
+    padding-inline: 16px;
+    margin-left: -100px;
+  }
+  
+  /* nav bar e derivados */
+  .nav {
+    max-width: 1300px;
+    height: 70px;
+    margin-inline: auto;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 20px;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  
+  .nav-list a {
+    font-size: 18px;
+    color: black;
+    padding-block: 16px;
+  }
+  
+  .login-registro-btns {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin-left: 120vh;
+  }
+  
+  .login-registro-btns a {
+    font-size: 18px;
+    color: black;
+    padding-block: 16px;
+    margin-left: auto;
+    border-radius: 8px;
+    padding: 16px;
+    background: rgba(77, 85, 97, 0.30);
+  }
+  
+  .login-registro-btns li a:hover {
+    background: rgb(123, 134, 151);
+    border-radius: 5px; 
+  }
+  
+  /* imagem principal da tela */
+  
+  .img-login {
+    width: 900px;
+    height: 930px;
+    margin-bottom: auto;
+    
+  }
+  
+  /* imagem principal da tela */
+  
+  .logo {
+    width: 82px;
+    height: 82px;
+    margin-right: 20px;
+  }
+  
+  /* final navbar */
+  
+  body {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+  }
+  
+  /* caixa de login */
+  
+  .login-box {
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: right; 
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    margin-top: 40vh;
+    margin-right: 30vh;
+  }
+  
+  .login-box h2 {
+    text-align: center; 
+    margin-bottom: 20px;
+    font-family: Alata;
+    margin-right: 13vh;
+    white-space: nowrap;
+  }
+  
+  .textbox {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .textbox input {
+    width: 350px;
+    height: 20px;
+    flex-shrink: 0;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.86);
+    font-family: Alata;
+  }
+  
+  .btn {
+    width: 373px;
+    padding: 10px;
+    border: 1px solid #000;
+    background: rgba(77, 85, 97, 0.30);
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Alata;
+  }
+  
+  .btn:hover {
+    background: rgb(123, 134, 151);
+  }
+  
+  /* final da caixa de login */

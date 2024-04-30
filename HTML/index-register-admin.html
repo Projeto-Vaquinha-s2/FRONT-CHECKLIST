@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro | Administrador</title>
+  <link rel="stylesheet" href="/css/style-register-admin.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script defer src="/JS/script-register-admin.js"></script>
+
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <img src="/assets/logo.png" alt="logo" class="logo">
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <ul class="login-registro-btns">
+        <li><a href="#login">Login</a></li>
+        <li><a href="#registro">Registro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="backgrd-img"></main>
+  <img src="/assets/img-register.png" alt="Background do login" class="img-login">
+
+  <div class="login-box">
+    <h2>Cadastre-se, Administrador!</h2>
+    <form>
+        <div class="textbox">
+            <input type="text" placeholder="Nome" name="username" required>
+        </div>
+        <div class="textbox">
+            <input type="text" placeholder="Email" name="password" required>
+        </div>
+        <div class="textbox">
+            <input type="text" placeholder="CPF" name="cpf" required>
+        </div>
+        <input type="submit" class="btn" value="LOGIN">
+    </form>
+</div>
+
+</body>
+</html>
