@@ -69,7 +69,6 @@ a {
   width: 900px;
   height: 910px;
   margin-bottom: auto;
-  
 }
 
 /* imagem principal da tela */
@@ -90,6 +89,7 @@ a {
   position: absolute;
   border-radius: 5px;
   padding: 10px;
+  margin-left: -3vh;
   z-index: 1;
   min-width: 120px;
   top: 35px;
@@ -101,10 +101,6 @@ a {
   padding: 10px;
   text-decoration: none;
   transition: background-color 0.3s;
-}
-
-.dropdown-content a:hover {
-  background-color: #f9f9f9;
 }
 
 .dropdown:hover .dropdown-content {
@@ -137,7 +133,6 @@ body {
   width: 300px;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: right; 
   position: fixed; 
   top: 0; 
@@ -184,3 +179,43 @@ body {
 }
 
 /* final da caixa de login */
+
+/*responsividade smartphone*/
+
+@media (width <= 768px) {
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 49vh;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding: 10px;
+  }
+
+  .nav {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .nav-list, .login-registro-btns {
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+    margin-left: 60vh;
+  }
+
+  .nav-list a {
+    padding: 10%;
+  }
+
+  .login-registro-btns {
+    margin-left: 44vh;
+    margin-right: -15vh;
+  }
+
+  .img-login {
+    width: 900px;
+    height: 270vh;
+    margin-bottom: auto;
+  }
+}

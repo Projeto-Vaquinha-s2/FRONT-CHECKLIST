@@ -20,3 +20,30 @@
     document.getElementById("adminBtn").addEventListener("click", redirectToAdminRegistration);
   });
 
+  //responsividade
+  window.addEventListener('resize', () => {
+    // Função para ajustar o layout em diferentes tamanhos de tela
+    adjustLayout();
+  });
+  
+  window.addEventListener('DOMContentLoaded', () => {
+    // Chamando a função para ajustar o layout quando a página é carregada
+    adjustLayout();
+  });
+  
+  function adjustLayout() {
+    const screenWidth = window.innerWidth;
+  
+    // Exemplo: Alterar o layout se a largura da tela for menor que 768px
+    if (screenWidth < 768) {
+      // Modificar o layout conforme necessário para telas pequenas
+      document.querySelector('.nav-list').style.display = 'none';
+      document.querySelector('.login-registro-btns').style.display = 'none';
+      // Outras modificações necessárias...
+    } else {
+      // Restaurar o layout para telas maiores
+      document.querySelector('.nav-list').style.display = 'flex';
+      document.querySelector('.login-registro-btns').style.display = 'flex';
+      // Outras modificações necessárias...
+    }
+  }

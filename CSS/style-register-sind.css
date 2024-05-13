@@ -87,12 +87,15 @@
   
   .dropdown-content {
     display: none;
+    margin-left: -3vh;
+    margin-top: 7px;
     position: absolute;
     border-radius: 5px;
     padding: 10px;
     z-index: 1;
     min-width: 120px;
-    top: 35px;
+    top: calc(100% + 5px);
+    left: 0;
   }
   
   .dropdown-content a {
@@ -101,6 +104,7 @@
     padding: 10px;
     text-decoration: none;
     transition: background-color 0.3s;
+    border: none !important;
   }
   
   .dropdown-content a:hover {
@@ -137,7 +141,6 @@
     width: 300px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: right; 
     position: fixed; 
     top: 0; 
@@ -185,3 +188,99 @@
   }
   
   /* final da caixa de login */
+
+  /*responsividade smartphone*/
+
+@media (width <= 900px) {
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 49vh;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding: 10px;
+  }
+
+  .nav {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .nav-list, .login-registro-btns {
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+    margin-left: 60vh;
+  }
+
+  .nav-list a {
+    padding: 10%;
+  }
+
+  .login-registro-btns {
+    margin-left: 44vh;
+    margin-right: -15vh;
+  }
+
+  .img-login {
+    width: 900px;
+    height: 270vh;
+    margin-bottom: auto;
+  }
+
+  .login-box h2 {
+    text-align: center; 
+    margin-bottom: 20px;
+    font-family: Alata;
+    margin-right: -3vh;
+    white-space: nowrap;
+  }
+
+  /*dropdown*/
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+    min-width: 120px;
+    top: 100%;
+    left: 0;
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropbtn {
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+  
+  .dropbtn:hover {
+    background-color: #f9f9f9;
+  }
+}
