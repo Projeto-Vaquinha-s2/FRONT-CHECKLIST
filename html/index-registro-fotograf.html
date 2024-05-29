@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style-registro-fotograf.css" media="">
+    <script defer src="/js/script-registro-fotograf.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+    <title>Registro Fotográfico do Condomínio</title>
+</head>
+<body>
+<!--Div titulo-->
+<div class="divTitulo"> 
+    <h1 class="titulo1">Registro Fotográfico</h1>
+</div> 
+
+<div class="divContainer">
+<!--Div de Escolha Condominio-->
+    <div class="divGeral">
+        <div class="divInfo">
+            <label for="Escolha o Condomínio" class="escolhaCondominio">Escolha o Condomínio</label>
+            <select class="escolhasCondominios">
+                <option selected disabled="">Selecione...</option>
+                <option>Condomínio A</option>
+                <option>Condomínio B</option>
+                <option>Condomínio C</option>
+                <option>Condomínio D</option>
+                <option>Condomínio E</option>
+                </select>
+        </div>
+
+        <!--Div para adicionar foto-->
+        <div class="divFotoProblema">
+            <label for="Adicione a foto do problema" class="textoImagem">Adicione a foto do Problema</label>
+            <input type="file" id="upfile" onchange="readURL(this);" class="imagemUpload">           
+            <img class="upload_imginfo" id="file_upload">
+        </div>
+
+        <!--Div para data da foto-->
+            <div class="divFotoData">  
+            <label for="Adicione a data da foto" class="dataFoto">Adicione a data da foto</label>
+                <input type="date" nome="data da foto" id="foto" class="selecioneDataFoto">
+            </div> 
+    </div>
+
+    <div class="divGeral2">
+        <!--Div para selecionar problema-->
+            <div class="divGera">
+                <label for="Selecione o tipo do Problema" class="tipodoProblema">Selecione o tipo do Problema</label>
+                <select id="tipo do Problema" class="opcaoSelecionavel">
+                    <option selected disabled="">Selecione...</option>
+                    <option>Administrativo</option>
+                    <option>Emergêcia</option>
+                    <option>Estrutural</option>
+                    <option>Recursos Humanos</option>
+                    <option>Segurança</option>
+                    <option>Sinistro</option>
+                </select>
+            </div>
+
+        <!--Div para descrever problema-->
+            <div class="divGera3">
+                <label for="Descrição do Problema" class="descricaoProblema">Descrição do Problema</label>
+                <textarea rows="6" class="textArea"></textarea>
+            </div>
+        </fieldset>
+
+        <!--Div para botão-->
+        <div class="divBotao">
+            <button class="botao" type="submit" >Voltar</button>
+            <button class="botao2" type="submit">Cadastrar</button>
+        </div>
+    </div>
+</div>
+<script src="js/rf.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</html>

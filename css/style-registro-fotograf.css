@@ -1,0 +1,174 @@
+body {
+    background: linear-gradient(
+       #4D5561 80%,#4D5561 80%
+        ); 
+    font-family: Alata;
+    text-decoration: none;
+    }
+
+.divTitulo {
+    position: relative;
+    left: 40px;
+}
+.titulo1 {
+    font-size: 32px;
+}
+
+.divContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFF;
+    margin: auto;
+    padding: 40px;
+    border: black solid;
+    border-radius: 5px;
+    max-width: 95%;
+    height: 600px;
+    justify-content: space-between;
+}
+
+.divGeral {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 80px;
+}
+.divGeral2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 80px;
+    right: 100px;
+}
+
+.divInfo {
+    margin-bottom: 100px;
+    height: auto;
+}
+
+.divFotoProblema {
+    margin-bottom: 100px;
+    display: block;
+    width: 100;
+}
+
+.diveGera {
+    display: block;
+    unicode-bidi: isolate; 
+}
+.divGera3 {
+    position: relative;
+    top: 150px;
+
+}
+.divBotao {
+    position: relative;
+    top: 380px;
+}
+
+.imagemUpload {
+    position: relative;
+    left: 50px;
+    border-radius: 6px;
+    border: 1px solid #000;
+    background: #FFF;
+    padding: 6px;
+}
+
+.upload_imginfo {
+    margin-bottom: auto;
+}
+
+.divFotoData {
+    margin-bottom: 100px;
+    
+}
+.descricaoProblema {
+    position: relative;
+    bottom: 200px;
+}
+
+.textArea {
+    position: relative;
+    left: 85px;
+    bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #000;
+    background: #FFF;
+    width: 300px;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+.opcaoSelecionavel {
+    display: flex;
+    width: 295px;
+    height: 41px;
+    padding: 8px;
+    align-items: flex-start;
+    gap: 84px;
+    flex-shrink: 0;
+    position: relative;
+    left: 250px;
+    bottom: 30px;
+    stroke-width: 1px;
+    border-radius: 6px;
+    border: 1px solid #000;
+    background: #FFF;
+    cursor: pointer;
+}
+
+.selecioneDataFoto {
+    position: relative;
+    left: 80px;
+    border-radius: 6px;
+    border: 1px solid #000;
+    background: #FFF;
+    padding: 6px;
+    width: 200px;
+    height: 21px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.escolhasCondominios {
+    position: relative;
+    left: 100px;
+    border-radius: 6px;
+    border: 1px solid #000;
+    background: #FFF;
+    padding: 6px;
+    stroke-width: 1px;
+    cursor: pointer;
+}
+
+.botao {
+    position: relative;
+    bottom: 150px;
+    right: 720px;
+    width: 224px;
+    height: 51px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.botao2 {
+    position: relative;
+    bottom: 150px;
+    left: 150px;
+    width: 224px;
+    height: 51px;
+    background-color: #4D55614D;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #696868; 
+    color: #fff; 
+}
+
+.botao2:hover {
+    background-color: rgba(77, 85, 97, 0.8); 
+    color: #fff; 
+}
