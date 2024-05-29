@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.80) 0%, rgba(77, 85, 97, 0.80) 75%, rgba(77, 85, 97, 0.80) 100%), #4D5561;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    font-family: Alata;
+  }
+  
+  
+  .container {
+    background-color: #D1CACA  ;
+    border: radius 10px;
+    padding: 15%;
+    width: 80%;
+    max-width: 760px;
+    box-shadow: 10 0 10px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  
+  .title {
+    flex-grow: 1;
+    font-size: 10%px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .building-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+  }
+  
+  .form-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-column {
+    flex: 1;
+    padding: 10%;
+  }
+  
+  .form-group {
+    margin-bottom: 1px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5%;
+    font-weight: bold;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #858181;
+    border-radius: 5px;
+  }
+  
+  .button-group {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #4D5561;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #3b4a5a;
+  }
+  
+  .back-btn {
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .button-back {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #4D5561;
+    border: 1px solid #4D5561;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  
+  .button-back:hover {
+    background-color: #f1f1f1;
+  }
+
+  

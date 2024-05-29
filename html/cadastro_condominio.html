@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style_cadastro_condominio.css"/>
+  <title>Cadastro de Condomínio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <script defer src="/js/script_cadastro_torres.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="/assets/_29b8677a-2241-4615-b1e3-8195d64c1f1d 1 copy.png" alt="Logo do Condomínio">
+    </div>
+    <div class="title">Cadastro de Condomínio</div>
+
+    <div class="form-wrapper">
+      <div class="form-column left">
+        <form class="form">
+          <div class="form-group">
+            <label for="building-name">Nome do edifício:</label>
+            <input type="text" id="building-name" class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="cnpj">CNPJ:</label>
+            <input type="text" id="cnpj" class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="state">Estado:</label>
+            <input type="text" id="state" class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" class="form-input">
+          </div>
+        </form>
+      </div>
+
+      <div class="form-column right">
+        <form class="form">
+          <div class="form-group">
+            <label for="city">Cidade:</label>
+            <input type="text" id="city" class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="neighborhood">Bairro:</label>
+            <input type="text" id="neighborhood" class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="number">Número:</label>
+            <input type="text" id="number" class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="towers">Quantidade de Torres:</label>
+            <input type="text" id="towers" class="form-input">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="button-group">
+      <button class="button">Cadastrar</button>
+    </div>
+
+    <div class="back-btn">
+      <button class="button-back">Voltar</button>
+    </div>
+  </div>
+</body>
+</html>

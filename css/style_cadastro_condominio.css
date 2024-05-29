@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+    font-family: Alata;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.80) 0%, rgba(77, 85, 97, 0.80) 75%, rgba(77, 85, 97, 0.80) 100%), #4D5561;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styles */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .form-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Button Styles */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #4D5561;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Back Button Styles */
+  .back-btn {
+    text-decoration: none;
+    color: #4D5561;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .form-wrapper {
+    display: flex; /* Wrap the form columns */
+  }
+  
+  .form-column {
+    flex: 1;
+    padding: 10%;
+  }
+  
