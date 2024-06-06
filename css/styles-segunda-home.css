@@ -1,67 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* Estilos globais */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Alata;
     background-color: #f4f4f4; /* Cor de fundo do corpo */
     overflow: hidden;
 }
 
 /* Estilos para o cabeçalho */
-header {
+.header {
+    background-color: #f4f4f4;
+    padding-inline: 16px;
+    margin-left: -100px;
+}
+
+.nav {
+    max-width: 1300px;
+    height: 70px;
+    margin-inline: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: white; /* Cor de fundo do cabeçalho */
-    padding: 10px 20px; /* Espaçamento interno do cabeçalho */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra do cabeçalho */
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
 }
-
-/* Estilos para o logotipo */
-.logo img {
-    height: 50px; /* Altura do logotipo */
+  
+.logo {
+    width: 20px;
+    margin-left: 10vh;
 }
-
-/* Estilos para a navegação */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  
+.nav-list {
     display: flex;
-    gap: 20px; /* Espaçamento entre os itens de navegação */
+    gap: 32px;
+    list-style: none;
 }
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
+  
+.nav-list a {
+    font-size: 18px;
     color: black;
-    font-weight: bold;
+    padding-block: 16px;
+    list-style: none;
+    text-decoration: none;
+}
+  
+.login-registro-btns {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin-left: 120vh;
+}
+  
+.login-registro-btns a {
+    font-size: 18px;
+    color: black;
+    padding-block: 16px;
+    margin-left: auto;
+    border-radius: 8px;
+    padding: 16px;
+    background: rgba(77, 85, 97, 0.30);
+    text-decoration: none;
+}
+  
+.login-registro-btns li a:hover {
+    background: rgb(123, 134, 151);
+    border-radius: 5px; 
 }
 
-/* Estilos para o botão de logout */
-.logout {
-    background-color: #d3d3d3; /* Cor de fundo do botão */
-    border: 2px solid #d3d3d3;
-    padding: 10px 20px;
+.logo {
+    width: 82px;
+    height: 82px;
+    margin-right: 20px;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: -3vh;
+    z-index: 1;
+    min-width: 120px;
+    top: 35px;
+}
+  
+.dropdown-content a {
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropbtn {
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 5px; /* Bordas arredondadas */
-    margin-top: 15px;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições para efeitos */
+    border: none;
+    background: none;
 }
-
-.logout:hover {
-    background-color: #b3b3b3; /* Cor alterada ao passar o mouse */
-}
-
-.logout:active {
-    transform: scale(0.95); /* Efeito de escala ao clicar */
+  
+.dropbtn:hover {
+    background-color: #f9f9f9;
 }
 
 /* Estilos para o conteúdo principal */

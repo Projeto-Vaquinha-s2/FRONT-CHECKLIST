@@ -11,31 +11,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Estilos CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles-segunda-home.css">
+    <link rel="stylesheet" href="/css/styles-segunda-home.css">
 </head>
 <body>
-    <!-- Barra de Navegação -->
-    <div class="navbar">
-        <!-- Logotipo -->
-        <div class="divLogo">
-            <img src="logo.png" alt="Logo" class="imageLogo">
-        </div>
-        <!-- Links de Navegação -->
-        <nav class="botaoTitulos">
-            <ul>
-                <li class="botaoHome"><a href="home.html">Home</a></li>
-                <li class="botaoProblema"><a href="problemas.html">Problemas</a></li>
-            </ul>
+    <header class="header">
+        <nav class="nav">
+          <img src="/assets/logo.png" alt="logo" class="logo">
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+          <ul class="login-registro-btns">
+            <li><a id="loginBtn" href="#">Login</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Registro</a>
+              <div class="dropdown-content">
+                <a id="sindicoBtn" href="#">Síndico</a>
+                <a  id="adminBtn" href="#">Administrador</a>
+            </li>
+          </ul>
         </nav>
-        <!-- Botão para sair -->
-        <div class="divBotao">
-            <button class="logout" type="submit">Sair</button>  
-        </div>
-    </div>
+      </header>
 
     <!-- Container para a imagem principal -->
     <div class="image-container">
-        <img src="img-login.jpg" alt="Building" class="imagemPrincipal">
+        <img src="/assets/img-login.jpg" alt="Building" class="imagemPrincipal">
     </div>
     
     <!-- Botões de exibição -->
@@ -47,6 +48,6 @@
     </div>
 
     <!-- Script JavaScript -->
-    <script src="script-segunda-home.js"></script>
+    <script src="/js/script-segunda-home.js"></script>
 </body>
 </html>
