@@ -1,0 +1,160 @@
+/* Estilos globais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Cor de fundo do corpo */
+    overflow: hidden;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* Cor de fundo do cabeçalho */
+    padding: 10px 20px; /* Espaçamento interno do cabeçalho */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra do cabeçalho */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Estilos para o logotipo */
+.logo img {
+    height: 50px; /* Altura do logotipo */
+}
+
+/* Estilos para a navegação */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens de navegação */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Estilos para o botão de logout */
+.logout {
+    background-color: #d3d3d3; /* Cor de fundo do botão */
+    border: 2px solid #d3d3d3;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições para efeitos */
+}
+
+.logout:hover {
+    background-color: #b3b3b3; /* Cor alterada ao passar o mouse */
+}
+
+.logout:active {
+    transform: scale(0.95); /* Efeito de escala ao clicar */
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 70px 20px 20px 20px; /* Espaçamento interno do conteúdo principal */
+}
+
+/* Contêiner da imagem principal */
+.image-container {
+    justify-content: left;
+    margin-top: 0;
+}
+
+.botaoRegistrar {
+    justify-content: center;
+}
+
+/* Estilos para os botões de registro */
+.register-button, .register-button1, .register-button2, .register-button3 {
+    background-color: #d3d3d3; /* Cor de fundo dos botões */
+    border: 2px solid #a3a3a3; /* Borda com tonalidade semelhante */
+    padding: 15px 20px; /* Preenchimento dos botões */
+    cursor: pointer;
+    border-radius: 5px; /* Bordas arredondadas */
+    position: absolute;
+    right: 20%;
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out; /* Transições para efeitos */
+    width: 160px; /* Largura dos botões */
+    height: 50px; /* Altura dos botões */
+    white-space: nowrap; /* Evita quebra de linha no texto dos botões */
+}
+
+.register-button:hover, .register-button1:hover, .register-button2:hover, .register-button3:hover {
+    background-color: #b3b3b3; /* Cor alterada ao passar o mouse */
+}
+
+.register-button:active, .register-button1:active, .register-button2:active, .register-button3:active {
+    transform: scale(0.95); /* Efeito de escala ao clicar */
+}
+
+/* Posicionamento dos botões de registro */
+.register-button {
+    top: 25%; /* Distância do topo para o primeiro botão */
+}
+
+.register-button1 {
+    top: 40%; /* Distância do topo para o segundo botão */
+}
+
+.register-button2 {
+    top: 55%; /* Distância do topo para o terceiro botão */
+}
+
+.register-button3 {
+    top: 70%; /* Distância do topo para o quarto botão */
+}
+
+/* Estilos para o logotipo da imagem */
+.imageLogo {
+    width: 60px; /* Largura do logotipo */
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+    display: flex;
+    background-color: #f4f4f4;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.divLogo {
+    display: block;
+}
+
+.botaoTitulos {
+    margin-top: 25px;
+}
+
+/* Estilos para a imagem principal */
+.imagemPrincipal {
+    width: 600px;
+    height: 900px;
+}
+
+/* Estilos para os botões adicionais */
+.botaoHome {
+    margin-right: 100px;
+}
+
+.botaoProblema {
+    margin-left: 100px;
+}
