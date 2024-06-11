@@ -1,286 +1,124 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
-  a {
-    font-family: Alata;
-    text-decoration: none;
-  }
-  
-  .header {
-    background-color: aliceblue;
-    padding-inline: 16px;
-    margin-left: -100px;
-  }
-  
-  /* nav bar e derivados */
-  .nav {
-    max-width: 1300px;
-    height: 70px;
-    margin-inline: auto;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 20px;
-  }
-  
-  .nav-list {
-    display: flex;
-    gap: 32px;
-    list-style: none;
-  }
-  
-  .nav-list a {
-    font-size: 18px;
-    color: black;
-    padding-block: 16px;
-  }
-  
-  .login-registro-btns {
-    display: flex;
-    gap: 32px;
-    list-style: none;
-    margin-left: 120vh;
-  }
-  
-  .login-registro-btns a {
-    font-size: 18px;
-    color: black;
-    padding-block: 16px;
-    margin-left: auto;
-    border-radius: 8px;
-    padding: 16px;
-    background: rgba(77, 85, 97, 0.30);
-  }
-  
-  .login-registro-btns li a:hover {
-    background: rgb(123, 134, 151);
-    border-radius: 5px; 
-  }
-  
-  /* imagem principal da tela */
-  
-  .img-login {
-    width: 900px;
-    height: 930px;
-    margin-bottom: auto;
-    
-  }
-  
-  /* imagem principal da tela */
-  
-  .logo {
-    width: 82px;
-    height: 82px;
-    margin-right: 20px;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.80) 0%, rgba(77, 85, 97, 0.80) 75%, rgba(77, 85, 97, 0.80) 100%), #4D5561;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajuste para 100vh */
+  overflow: hidden; /* Remover a barra de rolagem */
+  font-family: Alata;
+}
 
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    margin-left: -3vh;
-    margin-top: 7px;
-    position: absolute;
-    border-radius: 5px;
-    padding: 10px;
-    z-index: 1;
-    min-width: 120px;
-    top: calc(100% + 5px);
-    left: 0;
-  }
-  
-  .dropdown-content a {
-    color: #333;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    border: none !important;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #f9f9f9;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropbtn {
-    color: #333;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    background: none;
-  }
-  
-  .dropbtn:hover {
-    background-color: #f9f9f9;
-  }
-  
-  /* final navbar */
-  
-  body {
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-  }
-  
-  /* caixa de login */
-  
-  .login-box {
-    width: 300px;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: right; 
-    position: fixed; 
-    top: 0; 
-    right: 0; 
-    margin-top: 40vh;
-    margin-right: 30vh;
-  }
-  
-  .login-box h2 {
-    text-align: center; 
-    margin-bottom: 20px;
-    font-family: Alata;
-    margin-right: 13vh;
-    white-space: nowrap;
-  }
-  
-  .textbox {
-    position: relative;
-    margin-bottom: 20px;
-  }
-  
-  .textbox input {
-    width: 350px;
-    height: 20px;
-    flex-shrink: 0;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.86);
-    font-family: Alata;
-  }
-  
-  .btn {
-    width: 373px;
-    padding: 10px;
-    border: 1px solid #000;
-    background: rgba(77, 85, 97, 0.30);
-    cursor: pointer;
-    border-radius: 5px;
-    font-family: Alata;
-  }
-  
-  .btn:hover {
-    background: rgb(123, 134, 151);
-  }
-  
-  /* final da caixa de login */
+.container {
+  background-color: #D1CACA;
+  border-radius: 10px;
+  padding: 15px;
+  width: 80%;
+  max-width: 760px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  /*responsividade smartphone*/
+.cabecalho {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
 
-@media (width <= 900px) {
-  .login-box {
-    position: absolute;
-    top: 50%;
-    left: 49vh;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    padding: 10px;
-  }
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
 
-  .nav {
-    flex-direction: row;
-    height: auto;
-  }
+.titulo {
+  flex-grow: 1;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
 
-  .nav-list, .login-registro-btns {
-    flex-direction: row;
-    align-items: center;
-    margin: 10px 0;
-    margin-left: 60vh;
-  }
+.icone-predio {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
 
-  .nav-list a {
-    padding: 10%;
-  }
+.form-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .login-registro-btns {
-    margin-left: 44vh;
-    margin-right: -15vh;
-  }
+.form-coluna {
+  flex: 1;
+  padding: 10px;
+}
 
-  .img-login {
-    width: 900px;
-    height: 270vh;
-    margin-bottom: auto;
-  }
+.form-grupo {
+  margin-bottom: 10px;
+}
 
-  .login-box h2 {
-    text-align: center; 
-    margin-bottom: 20px;
-    font-family: Alata;
-    margin-right: -3vh;
-    white-space: nowrap;
-  }
+.form-grupo label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
 
-  /*dropdown*/
+.form-input {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #858181;
+  border-radius: 5px;
+}
 
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    border-radius: 5px;
-    padding: 10px;
-    z-index: 1;
-    min-width: 120px;
-    top: 100%;
-    left: 0;
-  }
-  
-  .dropdown-content a {
-    color: #333;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    border: none;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #f9f9f9;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropbtn {
-    color: #333;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    background: none;
-  }
-  
-  .dropbtn:hover {
-    background-color: #f9f9f9;
-  }
+.grupo-botoes {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.botao {
+  padding: 10px 20px;
+  background-color: #4D5561;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: #3b4a5a;
+}
+
+.btn-voltar {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.botao-voltar {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #4D5561;
+  border: 1px solid #4D5561;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botao-voltar:hover {
+  background-color: #f1f1f1;
+}
+
+.tabela {
+  margin-top: 20px;
+}
+
+.tabela-cabecalho, .tabela-corpo {
+  display: flex;
+}
+
+.tabela-coluna {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  flex: 1;
+  text-align: center;
 }

@@ -1,0 +1,131 @@
+* {
+  font-family: Alata;
+}
+
+body {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.80) 0%,
+   rgba(77, 85, 97, 0.80) 75%,
+   rgba(77, 85, 97, 0.80) 100%), #4D5561;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 800px;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type="text"], select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-container label {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #4D5561;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #5e6b79;
+  color: #4D5561;
+}
+
+select {
+  padding-right: 30px;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 6.658c-.746-.746-.216-2.022.835-2.022h9.426c1.05 0 1.58 1.276.835 2.022l-4.796 4.482a1.007 1.007 0 0 1-1.426 0z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px 16px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.grid-header {
+  font-weight: bold;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.grid-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
