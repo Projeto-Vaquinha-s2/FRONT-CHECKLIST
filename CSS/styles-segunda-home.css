@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-family: Alata;
+  text-decoration: none;
+}
+
+.header {
+  background-color: aliceblue;
+  padding-inline: 16px;
+  margin-left: -100px;
+}
+
+/* nav bar e derivados */
+.nav {
+  max-width: 1300px;
+  height: 70px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 82px;
+  height: 82px;
+  margin-right: 20px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-list a {
+  font-size: 18px;
+  color: black;
+  padding-block: 16px;
+}
+
+.login-registro-btns {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin-left: 120vh;
+}
+
+.login-registro-btns a {
+  font-size: 18px;
+  color: black;
+  padding-block: 16px;
+  margin-left: auto;
+  border-radius: 8px;
+  padding: 16px;
+  background: rgba(77, 85, 97, 0.30);
+}
+
+.login-registro-btns li a:hover {
+  background: rgb(123, 134, 151);
+  border-radius: 5px; 
+}
+
+/* imagem principal da tela */
+.img-login {
+  width: 900px;
+  height: auto;
+  margin-bottom: auto;
+  margin-left: -10vh;
+}
+
+/* contêiner principal */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* contêiner dos botões */
+.botoes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px;
+}
+
+.botaoRegistrar, .novos-botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  margin: 0; /* Remove o espaçamento entre as colunas */
+  margin-left: 10px;
+  margin-top: 10vh;
+  margin-right: 20vh;
+
+}
+
+.register-button, .register-button1, .register-button2, .register-button3, .new-button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgba(77, 85, 97, 0.30);
+  border: none;
+  cursor: pointer;
+  width: 140px; /* Diminui o tamanho dos botões */
+  padding: 15px;
+}
+
+.register-button a, .register-button1 a, .register-button2 a, .register-button3 a, .new-button a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  gap: 10px;
+}
+
+.register-button:hover, .register-button1:hover, .register-button2:hover, .register-button3:hover, .new-button:hover {
+  background-color: rgb(123, 134, 151);
+}
+
+/* dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: -3vh;
+  z-index: 1;
+  min-width: 120px;
+  top: 35px;
+}
+
+.dropdown-content a {
+  color: #333;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn {
+  color: #333;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.dropbtn:hover {
+  background-color: #f9f9f9;
+}
+
+/* final navbar */
+
+body {
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}

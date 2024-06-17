@@ -49,3 +49,48 @@ document.querySelector('input[name="cpf"]').addEventListener('input', function(e
     var novaPosicao = começa + (input.value.length - valorInicial.length);
     input.setSelectionRange(novaPosicao, novaPosicao);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const gridContainer = document.querySelector('.grid-container');
+
+    // Exemplo de dados
+    const data = [
+        { nome: 'João Silva', cpf: '123.456.789-00', data: '01/01/2023', torre: 'A' },
+        { nome: 'Maria Oliveira', cpf: '987.654.321-00', data: '15/02/2023', torre: 'B' }
+    ];
+
+    // Populando o grid com os dados
+    data.forEach(item => {
+        // Criar elementos para cada item
+        const nomeItem = document.createElement('div');
+        nomeItem.classList.add('grid-item');
+        nomeItem.innerHTML = `<input type="checkbox" class="item-checkbox"><span class="item-text">${item.nome}</span>`;
+
+        const cpfItem = document.createElement('div');
+        cpfItem.classList.add('grid-item');
+        cpfItem.innerHTML = `<input type="checkbox" class="item-checkbox"><span class="item-text">${item.cpf}</span>`;
+
+        const dataItem = document.createElement('div');
+        dataItem.classList.add('grid-item');
+        dataItem.textContent = item.data;
+
+        const torreItem = document.createElement('div');
+        torreItem.classList.add('grid-item');
+        torreItem.textContent = item.torre;
+
+        // Adicionar os elementos ao container do grid
+        gridContainer.appendChild(nomeItem);
+        gridContainer.appendChild(cpfItem);
+        gridContainer.appendChild(dataItem);
+        gridContainer.appendChild(torreItem);
+    });
+
+    // Adicionando event listeners às checkboxes
+    gridContainer.addEventListener('click', (event) => {
+        const checkbox = event.target.querySelector('input[type="checkbox"]');
+        if (event.target.tagName !== 'INPUT' && checkbox) {
+            checkbox.checked = !checkbox.checked;
+            event.target.classList.toggle('selected', checkbox.checked);
+        }
+    });
+});

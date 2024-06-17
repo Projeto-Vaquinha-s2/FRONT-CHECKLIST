@@ -49,3 +49,55 @@ document.querySelector('input[name="cpf"]').addEventListener('input', function(e
     var novaPosicao = começa + (input.value.length - valorInicial.length);
     input.setSelectionRange(novaPosicao, novaPosicao);
 });
+
+
+//lógica do grid-item, para que seja dinamico aos valores
+document.addEventListener('DOMContentLoaded', () => {
+    const gridItems = document.querySelectorAll('.grid-item');
+
+    // exemplo de dados
+    let data = [
+        { nome: 'João Silva', cpf: '123.456.789-00' },
+        { nome: 'Maria Oliveira', cpf: '987.654.321-00' }
+    ];
+    
+    // populando o grid com os dados
+    data.forEach((item, index) => {
+        const nomeItem = gridItems[index * 2];
+        const cpfItem = gridItems[index * 2 + 1];
+
+        if (nomeItem && cpfItem) {
+            nomeItem.innerHTML = `<input type="checkbox" class="item-checkbox"><span class="item-text">${item.nome}</span>`;
+            cpfItem.innerHTML = `<input type="checkbox" class="item-checkbox"><span class="item-text">${item.cpf}</span>`;
+        }
+    });
+
+    // leitores de evento pro grid
+    gridItems.forEach(item => {
+        const checkbox = item.querySelector('input[type="checkbox"]');
+        
+        if (checkbox) {
+            item.addEventListener('click', () => {
+                checkbox.checked = !checkbox.checked;
+                item.classList.toggle('selected', checkbox.checked);
+            });
+        }
+    });
+});
+
+updateGrid();
+
+// Função para deletar os usuários selecionados
+deletarButton.addEventListener('click', () => {
+    data = data.filter((item, index) => {
+        const nomeItem = gridContainer.children[index * 4];
+        const cpfItem = gridContainer.children[index * 4 + 1];
+        const selected = nomeItem.querySelector('input[type="checkbox"]').checked || cpfItem.querySelector('input[type="checkbox"]').checked;
+        return !selected;
+    });
+    updateGrid();
+});
+
+atualizarButton.addEventListener('click', () => {
+    updateGrid();
+});

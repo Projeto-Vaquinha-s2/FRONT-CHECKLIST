@@ -105,9 +105,13 @@ select {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
   margin-bottom: 20px;
+}
+
+.grid-header, .grid-item {
+  text-align: center;
 }
 
 .grid-header {
@@ -118,9 +122,23 @@ select {
 }
 
 .grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   border: 1px solid #ddd;
   background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  min-height: 40px;
+}
+
+.grid-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.grid-item:hover {
+  background-color: #f1f1f1;
 }
 
 .buttons {
